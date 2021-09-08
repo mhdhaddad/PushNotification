@@ -1,9 +1,9 @@
 # PushNotification Package
 
-[![Build Status](https://api.travis-ci.org/Edujugon/PushNotification.svg)](https://api.travis-ci.org/Edujugon/PushNotification)
-[![Total Downloads](https://poser.pugx.org/edujugon/push-notification/downloads)](https://packagist.org/packages/edujugon/push-notification)
-[![Latest Stable Version](https://poser.pugx.org/edujugon/push-notification/v/stable)](https://packagist.org/packages/edujugon/push-notification)
-[![License](https://poser.pugx.org/edujugon/push-notification/license)](https://packagist.org/packages/edujugon/push-notification)
+[![Build Status](https://api.travis-ci.org/Mhdhaddad/PushNotification.svg)](https://api.travis-ci.org/Mhdhaddad/PushNotification)
+[![Total Downloads](https://poser.pugx.org/mhdhaddad/push-notification/downloads)](https://packagist.org/packages/mhdhaddad/push-notification)
+[![Latest Stable Version](https://poser.pugx.org/mhdhaddad/push-notification/v/stable)](https://packagist.org/packages/mhdhaddad/push-notification)
+[![License](https://poser.pugx.org/mhdhaddad/push-notification/license)](https://packagist.org/packages/mhdhaddad/push-notification)
 
 This is an easy to use package to send push notification.
 
@@ -20,7 +20,7 @@ This is an easy to use package to send push notification.
 type in console:
 
 ```
-composer require "edujugon/push-notification:^v3.0.0"
+composer require "mhdhaddad/push-notification:^v3.0.0"
 ```
 
 ### Laravel 5.8/6 and higher
@@ -28,17 +28,17 @@ composer require "edujugon/push-notification:^v3.0.0"
 type in console:
 
 ```
-composer require edujugon/push-notification
+composer require mhdhaddad/push-notification
 ```
 
 The package will automatically register its service provider.
 
 Publish the package's configuration file to the application's own config directory
 ```
-php artisan vendor:publish --provider="Edujugon\PushNotification\Providers\PushNotificationServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Mhdhaddad\PushNotification\Providers\PushNotificationServiceProvider" --tag="config"
 ```
 
-> Go to [laravel facade sample](https://github.com/edujugon/PushNotification#laravel-alias-facade) directly.
+> Go to [laravel facade sample](https://github.com/mhdhaddad/PushNotification#laravel-alias-facade) directly.
 
 ### Configuration
 
@@ -122,24 +122,24 @@ Now you may use any method that you need. Please see the API List.
 
 ## API List
 
-- [setService](https://github.com/edujugon/PushNotification#setservice)
-- [setMessage](https://github.com/edujugon/PushNotification#setmessage)
-- [setDevicesToken](https://github.com/edujugon/PushNotification#setdevicestoken)
-- [send](https://github.com/edujugon/PushNotification#send)
-- [getFeedback](https://github.com/edujugon/PushNotification#getfeedback)
-- [getUnregisteredDeviceTokens](https://github.com/edujugon/PushNotification#getunregistereddevicetokens)
-- [setConfig](https://github.com/edujugon/PushNotification#setconfig)
-- [setUrl](https://github.com/edujugon/PushNotification#seturl)
+- [setService](https://github.com/mhdhaddad/PushNotification#setservice)
+- [setMessage](https://github.com/mhdhaddad/PushNotification#setmessage)
+- [setDevicesToken](https://github.com/mhdhaddad/PushNotification#setdevicestoken)
+- [send](https://github.com/mhdhaddad/PushNotification#send)
+- [getFeedback](https://github.com/mhdhaddad/PushNotification#getfeedback)
+- [getUnregisteredDeviceTokens](https://github.com/mhdhaddad/PushNotification#getunregistereddevicetokens)
+- [setConfig](https://github.com/mhdhaddad/PushNotification#setconfig)
+- [setUrl](https://github.com/mhdhaddad/PushNotification#seturl)
 
 ### Only for Gcm and Fcm
 
-- [setApiKey](https://github.com/edujugon/PushNotification#setapikey)
+- [setApiKey](https://github.com/mhdhaddad/PushNotification#setapikey)
 
 ### Only for Fcm
 
-- [sendByTopic](https://github.com/edujugon/PushNotification#sendbytopic)
+- [sendByTopic](https://github.com/mhdhaddad/PushNotification#sendbytopic)
 
-> Go to [Usage samples](https://github.com/edujugon/PushNotification#usage-samples) directly.
+> Go to [Usage samples](https://github.com/mhdhaddad/PushNotification#usage-samples) directly.
 
 #### setService
 
@@ -495,7 +495,7 @@ It would return the Push Feedback of the Notification sent.
 ### Notification channels
 
 #### Formatting Push Notifications
-If a notification supports being sent as an push message, you should define  `toApn` and/or `toFcm`/`toGcm` methods on the notification class. This method will receive a `$notifiable` entity and should return a  `Edujugon\PushNotification\Messages\PushMessage` instance:
+If a notification supports being sent as an push message, you should define  `toApn` and/or `toFcm`/`toGcm` methods on the notification class. This method will receive a `$notifiable` entity and should return a  `Mhdhaddad\PushNotification\Messages\PushMessage` instance:
 
 ```php
 public function toApn($notifiable)

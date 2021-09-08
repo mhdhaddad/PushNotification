@@ -4,13 +4,13 @@
     "keywords": ["Laravel", "push", "notification", "gcm", "apn", "fcm", "high", "priority"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/Edujugon/PushNotification/issues",
-        "source": "https://github.com/Edujugon/PushNotification"
+        "issues": "https://github.com/Mhdhaddad/PushNotification/issues",
+        "source": "https://github.com/Mhdhaddad/PushNotification"
     },
     "authors": [
         {
             "name": "Eduardo Marcos",
-            "email": "edujugon@gmail.com"
+            "email": "mhdhaddad@gmail.com"
         }
     ],
     "require": {
@@ -24,16 +24,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Edujugon\\PushNotification\\": "src/"
+            "Mhdhaddad\\PushNotification\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Edujugon\\PushNotification\\Providers\\PushNotificationServiceProvider"
+                "Mhdhaddad\\PushNotification\\Providers\\PushNotificationServiceProvider"
             ],
             "aliases": {
-                "PushNotification": "Edujugon\\PushNotification\\Facades\\PushNotification"
+                "PushNotification": "Mhdhaddad\\PushNotification\\Facades\\PushNotification"
             }
         }
     }

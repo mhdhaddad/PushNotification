@@ -1,8 +1,8 @@
 <?php
 
-namespace Edujugon\PushNotification\Channels;
+namespace Mhdhaddad\PushNotification\Channels;
 
-use Edujugon\PushNotification\Messages\PushMessage;
+use Mhdhaddad\PushNotification\Messages\PushMessage;
 
 class ApnChannel extends PushChannel
 {

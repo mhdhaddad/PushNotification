@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Edujugon PushNotification Test Suite">
+        <testsuite name="Mhdhaddad PushNotification Test Suite">
             <directory suffix=".php">./tests/</directory>
         </testsuite>
     </testsuites>

@@ -1,8 +1,8 @@
 <?php
 
-namespace Edujugon\PushNotification\Providers;
+namespace Mhdhaddad\PushNotification\Providers;
 
-use Edujugon\PushNotification\PushNotification;
+use Mhdhaddad\PushNotification\PushNotification;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
@@ -32,11 +32,11 @@ class PushNotificationServiceProvider extends ServiceProvider implements Deferra
      */
     public function register()
     {
-        $this->app->singleton('edujugonPushNotification', function ($app) {
+        $this->app->singleton('mhdhaddadPushNotification', function ($app) {
             return new PushNotification();
         });
 
-        $this->app->bind(PushNotification::class, 'edujugonPushNotification');
+        $this->app->bind(PushNotification::class, 'mhdhaddadPushNotification');
     }
 
     /**
@@ -46,7 +46,7 @@ class PushNotificationServiceProvider extends ServiceProvider implements Deferra
     {
         return [
             PushNotification::class,
-            'edujugonPushNotification',
+            'mhdhaddadPushNotification',
         ];
     }
 }

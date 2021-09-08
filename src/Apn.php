@@ -1,7 +1,7 @@
 <?php
-namespace Edujugon\PushNotification;
+namespace Mhdhaddad\PushNotification;
 
-use Edujugon\PushNotification\Contracts\PushServiceInterface;
+use Mhdhaddad\PushNotification\Contracts\PushServiceInterface;
 use Illuminate\Support\Arr;
 
 class Apn extends PushService implements PushServiceInterface

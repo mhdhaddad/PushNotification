@@ -29,4 +29,4 @@ Usage
 
 or for APN
 
-    $push = new PushNotification(new \Edujugon\PushNotification\Apn());
+    $push = new PushNotification(new \Mhdhaddad\PushNotification\Apn());

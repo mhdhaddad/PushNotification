@@ -1,6 +1,6 @@
 <?php
 /**
- * @see https://github.com/Edujugon/PushNotification
+ * @see https://github.com/Mhdhaddad/PushNotification
  */
 
 return [

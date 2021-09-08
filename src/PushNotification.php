@@ -1,5 +1,5 @@
 <?php
-namespace Edujugon\PushNotification;
+namespace Mhdhaddad\PushNotification;
 
 class PushNotification
 {

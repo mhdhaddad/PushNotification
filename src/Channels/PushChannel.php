@@ -1,22 +1,22 @@
 <?php
-namespace Edujugon\PushNotification\Channels;
+namespace Mhdhaddad\PushNotification\Channels;
 
-use Edujugon\PushNotification\Events\NotificationPushed;
-use Edujugon\PushNotification\Messages\PushMessage;
-use Edujugon\PushNotification\PushNotification;
+use Mhdhaddad\PushNotification\Events\NotificationPushed;
+use Mhdhaddad\PushNotification\Messages\PushMessage;
+use Mhdhaddad\PushNotification\PushNotification;
 use Illuminate\Notifications\Notification;
 
 abstract class PushChannel
 {
     /**
-     * @var \Edujugon\PushNotification\PushNotification
+     * @var \Mhdhaddad\PushNotification\PushNotification
      */
     protected $push;
 
     /**
      * Create a new Apn channel instance.
      *
-     * @param  \Edujugon\PushNotification\PushNotification $push
+     * @param  \Mhdhaddad\PushNotification\PushNotification $push
      */
     public function __construct(PushNotification $push)
     {
@@ -49,7 +49,7 @@ abstract class PushChannel
      * @param  string $service
      * @param  mixed $to
      * @param  array $data
-     * @param  \Edujugon\PushNotification\Messages\PushMessage $message
+     * @param  \Mhdhaddad\PushNotification\Messages\PushMessage $message
      * @return mixed
      */
     protected function push($service, $to, $data, PushMessage $message)
@@ -79,7 +79,7 @@ abstract class PushChannel
      *
      * @param  mixed $notifiable
      * @param  \Illuminate\Notifications\Notification  $notification
-     * @return \Edujugon\PushNotification\Messages\PushMessage
+     * @return \Mhdhaddad\PushNotification\Messages\PushMessage
      */
     protected function buildMessage($notifiable, Notification $notification)
     {
@@ -115,7 +115,7 @@ abstract class PushChannel
     /**
      * Build the push payload data.
      *
-     * @param  \Edujugon\PushNotification\Messages\PushMessage $message
+     * @param  \Mhdhaddad\PushNotification\Messages\PushMessage $message
      * @return array
      */
     abstract protected function buildData(PushMessage $message);
