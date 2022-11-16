@@ -1,40 +1,49 @@
 {
-    "name": "mhdhaddad/push-notification",
-    "description": "Laravel Package to send push notifications to Android and IOS devices. (GCM,FCM,APN)",
-    "keywords": ["Laravel", "push", "notification", "gcm", "apn", "fcm", "high", "priority"],
-    "license": "MIT",
-    "support": {
-        "issues": "https://github.com/Mhdhaddad/PushNotification/issues",
-        "source": "https://github.com/Mhdhaddad/PushNotification"
-    },
-    "authors": [
-        {
-            "name": "Eduardo Marcos",
-            "email": "mhdhaddad@gmail.com"
-        }
-    ],
-    "require": {
-        "php" : "^7.1.3|^8.0",
-        "guzzlehttp/guzzle": "^6.3 || ^7.0.1",
-        "illuminate/support": "~5.8 || ^6.0 || ^7.0 || ^8.0",
-        "illuminate/notifications": "~5.8 || ^6.0 || ^7.0 || ^8.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^7.5 || ^8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Mhdhaddad\\PushNotification\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Mhdhaddad\\PushNotification\\Providers\\PushNotificationServiceProvider"
-            ],
-            "aliases": {
-                "PushNotification": "Mhdhaddad\\PushNotification\\Facades\\PushNotification"
-            }
-        }
+  "name": "mhdhaddad/push-notification",
+  "description": "Laravel Package to send push notifications to Android and IOS devices. (GCM,FCM,APN)",
+  "keywords": [
+    "Laravel",
+    "push",
+    "notification",
+    "gcm",
+    "apn",
+    "fcm",
+    "high",
+    "priority"
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/Mhdhaddad/PushNotification/issues",
+    "source": "https://github.com/Mhdhaddad/PushNotification"
+  },
+  "authors": [
+    {
+      "name": "Mohamad Haddad",
+      "email": "m.a.haddad1989@gmail.com"
     }
+  ],
+  "require": {
+    "php": "^7.4|^8.0|^8.1",
+    "guzzlehttp/guzzle": "^6.3 || ^7.0.1",
+    "illuminate/support": "~5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+    "illuminate/notifications": "~5.8 || ^6.0 || ^7.0 || ^8.0|| ^9.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mhdhaddad\\PushNotification\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mhdhaddad\\PushNotification\\Providers\\PushNotificationServiceProvider"
+      ],
+      "aliases": {
+        "PushNotification": "Mhdhaddad\\PushNotification\\Facades\\PushNotification"
+      }
+    }
+  }
 }
